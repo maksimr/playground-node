@@ -1,3 +1,18 @@
 {
-  "configurations": []
+  "configurations": [
+    {
+      "name": "Debug Tests",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npx",
+      "sourceMaps": true,
+      "runtimeArgs": [
+        "jest",
+        "--runInBand"
+      ],
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+    }
+  ]
 }
