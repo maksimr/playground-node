@@ -1,10 +1,13 @@
 {
   "name": "playground-node",
+  "config": {
+    "main": "dist/index.js"
+  },
   "scripts": {
     "build-ts": "tsc",
     "watch-ts": "tsc -w",
-    "watch-node": "node --watch --watch-preserve-output dist/index.js",
-    "serve": "node dist/index.js",
+    "watch-node": "node --watch --watch-preserve-output $npm_package_config_main",
+    "serve": "node $npm_package_config_main",
     "build": "npm run build-ts",
     "prestart": "npm run build",
     "start": "npm run serve",
