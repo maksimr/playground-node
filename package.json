@@ -18,7 +18,7 @@
     "lint": "eslint \"**/*.{js,ts}\""
   },
   "devDependencies": {
-    "@types/eslint": "8.21.2",
+    "@types/eslint": "8.21.3",
     "@types/jest": "29.5.0",
     "@types/node": "18.15.3",
     "@typescript-eslint/parser": "5.55.0",
