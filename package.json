@@ -6,7 +6,7 @@
   "scripts": {
     "build-ts": "tsc",
     "watch-ts": "tsc -w",
-    "watch-node": "node --watch --watch-preserve-output $npm_package_config_main",
+    "watch-node": "node --enable-source-maps --watch --watch-preserve-output $npm_package_config_main",
     "serve": "node $npm_package_config_main",
     "build": "npm run build-ts",
     "prestart": "npm run build",
