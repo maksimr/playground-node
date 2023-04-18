@@ -17,4 +17,5 @@ jobs:
         run: |
           npm ci
           npm run test-type
+          npm run test-codestyle
           npm test
