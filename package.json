@@ -3,6 +3,10 @@
   "config": {
     "main": "dist/index.js"
   },
+  "babel": {
+    "retainLines": true,
+    "sourceMap": "inline"
+  },
   "scripts": {
     "build:ts": "tsc",
     "watch:ts": "tsc -w",
