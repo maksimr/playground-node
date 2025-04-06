@@ -1,18 +1,8 @@
 {
   "name": "playground-node",
-  "config": {
-    "main": "dist/index.js"
-  },
-  "babel": {
-    "retainLines": true,
-    "sourceMap": "inline"
-  },
   "scripts": {
-    "build": "tsc",
     "watch": "node -r ts-node/register --enable-source-maps --watch --watch-preserve-output src/",
-    "serve": "node $npm_package_config_main",
-    "prestart": "npm run build",
-    "start": "npm run serve",
+    "start": "node -r ts-node/register --enable-source-maps src/index.ts",
     "test": "node -r ts-node/register --enable-source-maps --test './src/**/*.test.*'",
     "test:type": "tsc --noEmit",
     "test:codestyle": "eslint \"**/*.{js,ts}\"",

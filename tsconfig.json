@@ -3,18 +3,10 @@
     "transpileOnly": true
   },
   "compilerOptions": {
-    "module": "commonjs",
+    "noEmit": true,
     "strict": true,
-    "esModuleInterop": true,
-    "target": "es2021",
-    "lib": [
-      "es2021"
-    ],
     "noImplicitAny": true,
     "moduleResolution": "node",
-    "sourceMap": true,
-    "outDir": "dist",
-    "baseUrl": ".",
     "pretty": true,
     "typeRoots": [
       "./node_modules/@types",
