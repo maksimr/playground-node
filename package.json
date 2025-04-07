@@ -1,11 +1,12 @@
 {
   "name": "playground-node",
+  "type": "module",
   "scripts": {
-    "watch": "node -r ts-node/register --enable-source-maps --watch --watch-preserve-output src/",
-    "start": "node -r ts-node/register --enable-source-maps src/index.ts",
-    "test": "node -r ts-node/register --enable-source-maps --test './src/**/*.test.*'",
+    "watch": "node --experimental-strip-types --disable-warning=ExperimentalWarning --watch --watch-preserve-output src/index.ts",
+    "start": "node --experimental-strip-types --disable-warning=ExperimentalWarning src/index.ts",
+    "test": "node --experimental-strip-types --disable-warning=ExperimentalWarning --test './src/**/*.test.*'",
     "test:type": "tsc --noEmit",
-    "test:codestyle": "eslint \"**/*.{js,ts}\"",
+    "test:codestyle": "eslint \"**/*.{[c]js,ts}\"",
     "test:all": "concurrently 'npm run test:type' 'npm run test:codestyle' 'npm run test'"
   },
   "devDependencies": {
@@ -14,7 +15,6 @@
     "@typescript-eslint/parser": "8.29.0",
     "concurrently": "9.1.2",
     "eslint": "9.24.0",
-    "ts-node": "10.9.2",
     "typescript": "5.8.3"
   }
 }
