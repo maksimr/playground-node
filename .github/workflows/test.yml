@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
       - name: node
-        run: echo "##[set-output name=versoin;]$(cat .nvmrc)"
+        run: echo "version=$(cat .nvmrc)" >> $GITHUB_OUTPUT
         id: node
       - uses: actions/setup-node@v4
         with:
