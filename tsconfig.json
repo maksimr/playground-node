@@ -3,10 +3,12 @@
     "transpileOnly": true
   },
   "compilerOptions": {
+    "module": "NodeNext",
     "noEmit": true,
     "strict": true,
+    "allowJs": true,
     "noImplicitAny": true,
-    "moduleResolution": "node",
+    "moduleResolution": "nodenext",
     "pretty": true,
     "typeRoots": [
       "./node_modules/@types",
@@ -14,6 +16,7 @@
     ]
   },
   "include": [
-    "src"
+    "src",
+    "eslint.config.js",
   ]
 }

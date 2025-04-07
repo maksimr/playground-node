@@ -1,4 +1,7 @@
-module.exports = {
+//@ts-check
+
+/**@type {import('eslint').Linter.Config}*/
+const eslintConfig = {
   'languageOptions': {
     'parser': require('@typescript-eslint/parser'),
     'globals': {
@@ -23,3 +26,5 @@ module.exports = {
     'node_modules/**'
   ]
 };
+
+module.exports = eslintConfig;
