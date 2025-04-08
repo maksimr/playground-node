@@ -13,7 +13,7 @@
     ]
   },
   "include": [
-    "src",
-    "eslint.config.cjs",
+    "src/",
+    "eslint.config.mjs",
   ]
 }

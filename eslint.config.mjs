@@ -1,9 +1,10 @@
 //@ts-check
+import parser from '@typescript-eslint/parser';
 
 /**@type {import('eslint').Linter.Config}*/
 const eslintConfig = {
   'languageOptions': {
-    'parser': require('@typescript-eslint/parser'),
+    'parser': parser,
     'globals': {
       'process': 'readonly',
       'require': 'readonly',
@@ -27,4 +28,4 @@ const eslintConfig = {
   ]
 };
 
-module.exports = eslintConfig;
+export default eslintConfig;
