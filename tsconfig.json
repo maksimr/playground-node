@@ -5,6 +5,7 @@
     "strict": true,
     "allowJs": true,
     "noImplicitAny": true,
+    "allowImportingTsExtensions": true,
     "moduleResolution": "nodenext",
     "pretty": true,
     "typeRoots": [
@@ -14,6 +15,6 @@
   },
   "include": [
     "src/",
-    "eslint.config.mjs",
+    "eslint.config.mjs"
   ]
 }
