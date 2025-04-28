@@ -12,7 +12,7 @@
   "devDependencies": {
     "@types/eslint": "9.6.1",
     "@types/node": "22.15.3",
-    "@typescript-eslint/parser": "8.31.0",
+    "@typescript-eslint/parser": "8.31.1",
     "concurrently": "9.1.2",
     "eslint": "9.25.1",
     "typescript": "5.8.3"
