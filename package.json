@@ -14,7 +14,7 @@
     "@types/node": "22.15.34",
     "@typescript-eslint/parser": "8.35.1",
     "concurrently": "9.2.0",
-    "eslint": "9.30.0",
+    "eslint": "9.30.1",
     "typescript": "5.8.3"
   }
 }
