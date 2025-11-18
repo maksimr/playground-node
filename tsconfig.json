@@ -1,20 +1,15 @@
 {
   "compilerOptions": {
-    "module": "NodeNext",
     "noEmit": true,
+    "target": "esnext",
+    "module": "nodenext",
+    "rewriteRelativeImportExtensions": true,
+    "erasableSyntaxOnly": true,
+    "verbatimModuleSyntax": true,
     "strict": true,
     "allowJs": true,
     "noImplicitAny": true,
     "allowImportingTsExtensions": true,
-    "moduleResolution": "nodenext",
     "pretty": true,
-    "typeRoots": [
-      "./node_modules/@types",
-      "./src/@types"
-    ]
-  },
-  "include": [
-    "src/",
-    "eslint.config.mjs"
-  ]
+  }
 }
