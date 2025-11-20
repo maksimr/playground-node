@@ -2,9 +2,9 @@
   "name": "playground-node",
   "type": "module",
   "scripts": {
-    "watch": "node --experimental-strip-types --disable-warning=ExperimentalWarning --watch --watch-preserve-output src/index.ts",
-    "start": "node --experimental-strip-types --disable-warning=ExperimentalWarning src/index.ts",
-    "test": "node --experimental-strip-types --disable-warning=ExperimentalWarning --test './src/**/*.test.*'",
+    "watch": "node --watch --watch-preserve-output src/index.ts",
+    "start": "node src/index.ts",
+    "test": "node --test './src/**/*.test.*'",
     "test:type": "tsc --noEmit",
     "lint": "eslint '**/*.{[mc]js,ts}'",
     "test:all": "concurrently 'npm run test:type' 'npm run lint' 'npm run test'"
