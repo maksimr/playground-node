@@ -1,5 +1,7 @@
-function main(str: string) {
-  console.log(str);
+import { getVersion } from "./version.ts";
+
+function main() {
+  console.log(getVersion());
 }
 
-main(process.version);
+main();
