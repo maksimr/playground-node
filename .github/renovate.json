@@ -4,7 +4,7 @@
     "config:base"
   ],
   "enabled": true,
-  "automerge": false,
+  "automerge": true,
   "packageRules": [
     {
       "enabled": true,
@@ -12,7 +12,7 @@
         "dependencies",
         "devDependencies"
       ],
-      "automerge": false
+      "automerge": true
     }
   ]
 }
