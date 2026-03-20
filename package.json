@@ -14,7 +14,7 @@
     "@types/node": "24.12.0",
     "@typescript-eslint/parser": "8.57.1",
     "concurrently": "9.2.1",
-    "eslint": "10.0.3",
+    "eslint": "10.1.0",
     "typescript": "5.9.3"
   }
 }
